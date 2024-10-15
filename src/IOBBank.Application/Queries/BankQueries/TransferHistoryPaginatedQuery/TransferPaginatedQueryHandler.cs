@@ -31,7 +31,7 @@ public class ObterCategoriaPaginatedQueryHandler : IQueryHandler<TransferPaginat
                    .Select(x => new TransferPaginatedQueryItem
                    {
                        Id = x.Id,
-                       Balance = x.BankAccount.Balance,
+                       Balance = x.Value,
                        OperationType = (int)x.OperationType,
                        Account = x.BankAccount.Account,
                        Branch = x.BankAccount.Branch,
